@@ -10,7 +10,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://fakestoreapi.com/products'); // Replace with your actual API endpoint
+        const response = await axios.get('https://fakestoreapi.com/products');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching the products', error);
