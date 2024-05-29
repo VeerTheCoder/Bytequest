@@ -1,0 +1,107 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #d4d4d4;
+}
+
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  align-items: center;
+
+}
+
+.navbar-logo a {
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.logo{
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+.product-card .save-product{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.product-card .save-product:hover{
+  cursor: pointer;
+}
+.product-image-container {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #4b4a4a;
+}
+
+.product-price {
+  color: #4b4a4a;
+  font-size: 1em;
+}
